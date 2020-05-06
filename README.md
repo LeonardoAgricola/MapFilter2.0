@@ -6,9 +6,8 @@ O  `MapFilter 2.0` é um software livre destinado a análise e remoção de dado
 
 ## Instalação do software
 
-Para instalar a última versão estável do `MapFilter 2.0` faça o donload pelo[link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip) e axtrai o arquivo `.zip` e execute o arquivo:
-
-```R
+Para instalar a última versão estável do `MapFilter 2.0` faça o donload pelo [link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip), descompacte o arquivo `.zip` e execute o arquivo:
+```
 MapFilter-2.0.exe
 ```
 
