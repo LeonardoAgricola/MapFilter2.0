@@ -2,4 +2,4 @@
 
 Tche guri
 
-![](fig1.jpg)
+![](https://github.com/LeonardoTche/Imagens/blob/master/fig1.jpg)
