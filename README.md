@@ -1,17 +1,16 @@
-## MAP FILTER
+## MAP FILTER 2.0
 
 ## Overview
 
-O  `MapFilter` foi desenvolvido para identificar e remover erros em conjuntos de dados de alta densidade (dados de monitor de colheita, de sensores de plantas, de sensores de solo). É um software simples, com uma interface amigável, cujo objetivo é auxiliar os usuários a gerar mapas relacionados às suas lavouras com maior confiabilidade a partir da otimização da qualidade dos dados. Executa a filtragem espacial destes dados por meio da análise global e local (isotrópica e anisotrópica) levando em consideração os valores das vizinhanças. A visualização dos dados após a filtragem permite que o usuário faça uma rápida análise da qualidade da filtragem espacial.
+O  `MapFilter 2.0` é um software livre destinado a análise e remoção de dados inconsistentes em dados de alta densidade (dados de monitor de colheita, de sensores de plantas, de sensores de solo). É um software simples, com uma interface amigável, cujo objetivo é auxiliar os usuários a gerar mapas relacionados às suas lavouras com maior confiabilidade a partir da otimização da qualidade dos dados. Executa a filtragem espacial destes dados por meio da análise global e local (isotrópica e anisotrópica) levando em consideração os valores das vizinhanças. A visualização dos dados após a filtragem permite que o usuário faça uma rápida análise da qualidade da filtragem espacial.
 
-Download
-------------------
-Faça o download do arquivo MapFilter-2.0.exe
+## Instalação do software
 
-Ou pelo usando o link https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip
+Para instalar a última versão estável do `MapFilter 2.0` faça o donload pelo[link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip) e axtrai o arquivo `.zip` e execute o arquivo:
 
-
-
+```R
+MapFilter-2.0.exe
+```
 
 ## Author Contact Information
 
