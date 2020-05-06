@@ -15,9 +15,9 @@ MapFilter-2.0.exe
 Versão em inglês  
 [Versão em Português](Tutorial.md)
 
-## Informações de contato do autor
+## Informações de contato
 
-[Dr José Paulo Molin](mailto:jpmolin@usp.br)  
+[Dr. José Paulo Molin](mailto:jpmolin@usp.br)  
 Professor Associado III na Universidade de São Paulo           
 Coordenador do Laboratório de Agricultura de Precisão - LAP     
 Av. Pádua Dias, 11 – C.P. 09 – Piracicaba - SP    
