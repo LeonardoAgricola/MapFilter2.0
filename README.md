@@ -10,6 +10,10 @@ Para instalar a última versão do `MapFilter` faça o donload pelo [link]( http
 ```
 MapFilter-2.0.exe
 ```
+## Tutorial
+
+Versão em inglês
+[Versão em Português](https://github.com/LeonardoTche/LAP-FIltro/blob/master/Tutorial.md)
 
 ## Informações de contato do autor
 
