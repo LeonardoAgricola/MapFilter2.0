@@ -12,8 +12,8 @@ MapFilter-2.0.exe
 ```
 ## Tutorial
 
-[Versão em inglês](Tutorial_en.md)        
-[Versão em Português](Tutorial_pt.md)
+[Versão em inglês](Tutorial/Tutorial_en.md)        
+[Versão em Português](Tutorial/Tutorial_pt.md)
 
 Também está disponível o [vídeo](https://www.youtube.com/watch?v=7eFH_dt4OMw&t=23s) tutorial no canal do [Laboratório de Agricultura de Precisão (ESALQ/USP)](https://www.youtube.com/channel/UCl6Lstj-l_1P8FHrpXKyAqA).
 
