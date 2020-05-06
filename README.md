@@ -17,11 +17,8 @@ Ou pelo usando o link https://www.agriculturadeprecisao.org.br/wp-content/upload
 ## Author Contact Information
 
 [Dr José Paulo Molin](mailto:jpmolin@usp.br)  
-
 Professor Associado III na Universidade de São Paulo
-
 Coordenador do Laboratório de Agricultura de Precisão - LAP
-
 Av. Pádua Dias, 11 – C.P. 09 – Piracicaba - SP
 Depto de Eng. de Biossistemas, USP/ESALQ
 CEP: 13418-900
