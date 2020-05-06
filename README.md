@@ -11,7 +11,7 @@ Para instalar a última versão do `MapFilter` faça o donload pelo [link]( http
 MapFilter-2.0.exe
 ```
 
-## Author Contact Information
+## Informações de contato do autor
 
 [Dr José Paulo Molin](mailto:jpmolin@usp.br)  
 Professor Associado III na Universidade de São Paulo           
