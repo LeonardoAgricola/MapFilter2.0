@@ -13,7 +13,7 @@ MapFilter-2.0.exe
 ## Tutorial
 
 Versão em inglês  
-[Versão em Português](https://github.com/LeonardoTche/LAP-FIltro/blob/master/Tutorial.md)
+[Versão em Português](Tutorial.md)
 
 ## Informações de contato do autor
 
