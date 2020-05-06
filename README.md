@@ -1,9 +1,8 @@
 ## MAP FILTER
-===========
 
-Desenvolvido pelo Laboratório de Agriculturade Precisão(LAP) da Universidade de São Paulo, localizado na ESALQ, Piracicaba-SP
+## Overview
 
-É um software livre destinado a análise e remoção de dados inconsistentes em mapas de alta densidade
+O  `MapFilter` foi desenvolvido para identificar e remover erros em conjuntos de dados de alta densidade (dados de monitor de colheita, de sensores de plantas, de sensores de solo). É um software simples, com uma interface amigável, cujo objetivo é auxiliar os usuários a gerar mapas relacionados às suas lavouras com maior confiabilidade a partir da otimização da qualidade dos dados. Executa a filtragem espacial destes dados por meio da análise global e local (isotrópica e anisotrópica) levando em consideração os valores das vizinhanças. A visualização dos dados após a filtragem permite que o usuário faça uma rápida análise da qualidade da filtragem espacial.
 
 Download
 ------------------
@@ -17,8 +16,8 @@ Ou pelo usando o link https://www.agriculturadeprecisao.org.br/wp-content/upload
 ## Author Contact Information
 
 [Dr José Paulo Molin](mailto:jpmolin@usp.br)  
-Professor Associado III na Universidade de São Paulo
-Coordenador do Laboratório de Agricultura de Precisão - LAP
-Av. Pádua Dias, 11 – C.P. 09 – Piracicaba - SP
-Depto de Eng. de Biossistemas, USP/ESALQ
-CEP: 13418-900
+Professor Associado III na Universidade de São Paulo           
+Coordenador do Laboratório de Agricultura de Precisão - LAP     
+Av. Pádua Dias, 11 – C.P. 09 – Piracicaba - SP    
+Depto de Eng. de Biossistemas, USP/ESALQ    
+CEP: 13418-900    
