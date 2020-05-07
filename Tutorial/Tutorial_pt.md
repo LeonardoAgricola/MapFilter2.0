@@ -29,37 +29,32 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 ### Iniciar o software
 
 Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Window. Em seguida ir na pasta **LAP USP** e clicar em **MapFilter**.<br/>
-<br/>  
+
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" width="700"/></a>          <br>  
   <em> Interface inicial </em>
-</p><br/>
-<br/>   
+</p>
 
 ### Selecionar arquivo
 
 Neste tutorial iremos utilizar como exemplo dados de produtivade de milho.<br/>
-<br/>   
+ 
 Para abrir o conjunto de dados a ser filtrado clique em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img2.png?raw="True")](#features) na tela inicial e selecione o arquivo [`corn_yield.txt`](/Exemplo/).<br/>
-<br/> 
-<br/>  
 
 ### Identificar o atributo a ser filtrado
 
 Identifique o atributo a ser filtrado:<br/>
-<br/>  
+ 
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png" width="300"/></a> 
-</p> <br/>
+</p> 
+  
 <br/>  
-<br/>  
-Os dados do atributo a ser filtrado são plotados no visor e a estatística descritiva é calculada:<br/>
-<br/>  
+Os dados do atributo a ser filtrado são plotados no visor e a estatística descritiva é calculada:<br/>  
 
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a> 
-</p><br/>
-<br/> 
+</p>
 <br/>  
 
 ### Filtragem global
@@ -70,41 +65,36 @@ Limite Superior = mediana + mediana x v                                         
 Limite Inferior = mediana - mediana x v                                                                  Equação 2
 ```
 
-<br/>  
 O valor de ` v ` deve ser informado pelo usuário no campo `  Variation of limit (%)  `
-<br/>
-<br/>  
+  
+  
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png" width="300"/></a> 
-</p><br/>
-<br/>  
-No nosso exemplo iremos utilizar `v = 90`<br/>
-<br/>  
+</p>
+
+
+No nosso exemplo iremos utilizar `v = 90`
+
+
 Para realizar o filtragem global clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)  
 
-</br>
 
 Após a filtragem global o **MapFilter** plota e recalcula a estatistica descritiva dos dados remanecentes da filtragem. Neste exemplo a filtragem global eliminou todos os dados com valores de produtividade acima de 7.53 e abaixo de 3.63.  
-
-<br></br>
 
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a> 
 </p>
-<br/> 
+
 
 ### Filtragem local
 
 O **filtro local** foi dividido em duas etapas: filtro local anisotrópico e isotrópico. <br/> 
 O *filtro anisotrópico* detecta todos os pontos localizados em uma faixa de *raio (R)* em torno de um ponto xi em uma *única direção*. O ponto xi é comparado com k vizinhos à frente e k vizinhos anteriores. O k é o número de vizinhos cuja distância euclidiana é menor ou igual ao R (linha azul na Figura). A mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 são aplicados ao ponto xi. Se o valor do ponto xi for maior ou menor dos limites superior e inferior de corte, ele será considerado um erro local e será excluído do conjunto de dados.<br/>
-O *filtro isotrópico* detecta todos os k pontos vizinhos localizados em um *R* em torno de um ponto xi em *qualquer direção*. Então, a mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 é aplicado ao ponto xi. O filtro exclui o ponto xi com um valor maior ou menor que os limites de corte superior e inferior. 
-
-<br></br><br/>
+O *filtro isotrópico* detecta todos os k pontos vizinhos localizados em um *R* em torno de um ponto xi em *qualquer direção*. Então, a mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 é aplicado ao ponto xi. O filtro exclui o ponto xi com um valor maior ou menor que os limites de corte superior e inferior.<br/>
 
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_pt.png" width="700"/></a> 
 </p>
 
-<br></br>
 
 Os dados que não foram excluídos pelo filtro podem ser salvos em um arquivo tipo texto (`.txt` ou `.csv`). Basta clicar no ícone
