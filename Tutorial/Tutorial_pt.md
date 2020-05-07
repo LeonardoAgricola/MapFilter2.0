@@ -49,13 +49,14 @@ Identifique o atributo a ser filtrado:<br/>
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png" width="300"/></a> 
 </p> 
   
-<br/>  
+
 Os dados do atributo a ser filtrado são plotados no visor e a estatística descritiva é calculada:<br/>  
+<br/>
 
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a> 
 </p>
-<br/>  
+<br/>
 
 ### Filtragem global
 
@@ -67,10 +68,13 @@ Limite Inferior = mediana - mediana x v                                         
 
 O valor de ` v ` deve ser informado pelo usuário no campo `  Variation of limit (%)  `
   
-  
+<br/>
+
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png" width="300"/></a> 
 </p>
+
+<br/>
 
 
 No nosso exemplo iremos utilizar `v = 90`
