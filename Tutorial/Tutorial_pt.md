@@ -1,5 +1,6 @@
 ## Tutorial
 
-Tche gu
+FIltragem local: 
 
+<img src="https://user-images.githubusercontent.com/35964306/81243340-f2158200-8fe5-11ea-9e1b-d94e184f42f0.png" width ="400">
 <img src="https://user-images.githubusercontent.com/35964306/81240973-5b45c700-8fdf-11ea-81ce-8c73c6091f85.png" width="400" >
