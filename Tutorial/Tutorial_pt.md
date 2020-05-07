@@ -15,7 +15,7 @@ Em seguida altere os campos conforme abaixo:
 
 ## Formato do arquivo de dados
 
-O **MapFilter** processa um único conjunto de dados em um arquivo em formato de texto (`.txt` ou `.csv`) por vez. Os arquivos de texto devem conter pelo menos **três atributos numéricos**: dois atributos contendo a *latitude* e *longitude* e o *atributo* que será submetido à filtragem.
+O **MapFilter** processa um único conjunto de dados em um arquivo em formato de texto (`.txt` ou `.csv`) por vez. O arquivo de texto deve conter pelo menos *três atributos numéricos*: dois atributos contendo a **latitude** e **longitude** e o **atributo** que será submetido à filtragem.
 
 ### Importante
 
@@ -24,7 +24,7 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 * As coordenadas precisam ter o cabeçalho nomeados com as iniciais **"Lat"** e **"Long"** ou **"X"** e **"Y"**.
 
 
-## Executar o softaware
+## Executar o software
 
 Filtragem local: 
 
