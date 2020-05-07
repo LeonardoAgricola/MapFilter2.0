@@ -13,7 +13,18 @@ Em seguida altere os campos conforme abaixo:
 > Separador de listas: `,` (vírgula)    
 
 
+## Arquivo
 
+O **MapFilter** processa um único conjunto de dados em um arquivo em formato de texto (`.txt` ou `.csv`) por vez. Os arquivos de texto devem conter pelo menos **três atributos numéricos**: dois atributos contendo a *latitude* e *longitude* e o *atributo* que será submetido à filtragem.
+
+### Importante
+
+* A primeira linha do arquivo deve conter um cabeçalho (denominação) de atributos; 
+* As coordenadas devem estar no datum WGS 84 fornecido em **coordenadas geográficas (graus decimais)**, que é uma forma comum para o armazenamento de coordenadas em registradores de dados agrícolas **ou** na forma **métrica (UTM)**; 
+* As coordenadas precisam ter o cabeçalho nomeados com as iniciais **"Lat"** e **"Long"** ou **"X"** e **"Y"**.
+
+
+## Ler um arquivo
 
 Filtragem local: 
 
