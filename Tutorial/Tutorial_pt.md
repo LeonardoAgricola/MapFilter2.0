@@ -31,9 +31,8 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Window. Em seguida ir na pasta **LAP USP** e clicar em **MapFilter**. 
 
 
-<p align="center"> 
-     ![image](https://user-images.githubusercontent.com/35964306/81255667-a4f4d880-9004-11ea-92be-794fdef76d86.png)  
-</p>
+[![image](https://user-images.githubusercontent.com/35964306/81257583-00759500-900a-11ea-8241-e00da213af1a.png)](#features) 
+
      
 
 ### Selecionar arquivo
