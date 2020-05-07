@@ -29,12 +29,13 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 ### Iniciar o software
 
 Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Window. Em seguida ir na pasta **LAP USP** e clicar em **MapFilter**. 
-
-
-
+<p></p>
+<p></p>
+<p></p>
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" /></a><br/>Interface inicial
-</p>   
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" width="700"/></a>  
+</p> 
+<p align="center"> Interface inicial </p>
 
 ### Selecionar arquivo
 
