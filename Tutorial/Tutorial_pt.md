@@ -38,7 +38,7 @@ Figura 1. Interface inicial.
 
 Neste tutorial iremos utilizar como exemplo dados de produtivade de milho. 
 
-Para abrir o arquivo com os dados de produtividade de milho clique em  [![image](https://user-images.githubusercontent.com/35964306/81250000-52142480-8ff6-11ea-943b-3ee86174b19d.png)](#features) na tela inicial e selecione o arquivo  [`corn_yield.txt`](/Exemplo/).
+Para abrir o arquivo com os dados de produtividade de milho clique em  [![image](https://user-images.githubusercontent.com/35964306/81252494-6e1ac480-8ffc-11ea-8e94-853bd8d54880.png?raw="True")](#features) na tela inicial e selecione o arquivo  [`corn_yield.txt`](/Exemplo/).
 
 
 ### Identificar o atributo a ser filtrado
