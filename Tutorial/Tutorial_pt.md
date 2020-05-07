@@ -26,13 +26,26 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 
 ## Filtragem de dados
 
+### Iniciar o software
+
 Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Window. Em seguida ir na pasta **LAP USP** e clicar em **MapFilter**. 
 
 
 <img src="https://user-images.githubusercontent.com/35964306/81248864-b84b7800-8ff3-11ea-8714-bf8a247334dd.png" width ="600">
 Figura 1. Interface inicial.    
 
-Para **abrir** o arquivo com os atributos que deseja procesar clique em  [![image](https://user-images.githubusercontent.com/35964306/81250000-52142480-8ff6-11ea-943b-3ee86174b19d.png)](#features) e seleciome o arquivo.
+### Selecionar arquivo
+
+Neste tutorial iremos utilizar como exemplo dados de produtivade de milho.
+
+Para selecionar o arquivo com os dados de produtividade de milho clique em  [![image](https://user-images.githubusercontent.com/35964306/81250000-52142480-8ff6-11ea-943b-3ee86174b19d.png)](#features) e selecione o arquivo `corn_yield.txt`.
+
+
+
+
+### Identificar o atributo a ser filtrado
+
+Em seguida identifique o atributo a ser filtrado:
 
 
 
