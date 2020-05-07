@@ -73,9 +73,8 @@ O valor de ` v ` deve ser informado pelo usuário no campo | [![image](https://g
 
 No nosso exemplo iremos utilizar ` v = 90 `. 
 
-Para realizar a filtragem global bansta clicar em [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw="True")](#)  
+<div vling="middle"> Para realizar a filtragem global bansta clicar em</div>
+<div vling="middle">  
+  <a href="#"><img  src=(https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw="True"></a>  
+</div>
 
-
-
-
-<img src="https://user-images.githubusercontent.com/35964306/81243340-f2158200-8fe5-11ea-9e1b-d94e184f42f0.png" width ="400">
