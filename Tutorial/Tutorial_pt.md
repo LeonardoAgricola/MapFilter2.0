@@ -24,9 +24,9 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 * As coordenadas precisam ter o cabeçalho nomeados com as iniciais **"Lat"** e **"Long"** ou **"X"** e **"Y"**.
 
 
-## FIltragem de dados
+## Filtragem de dados
 
-Para iniciar o software **MapFilter 2.0** vá em Menu Iniciar do Window e na pasta LAP USP clicar em MapFilter. 
+Para iniciar o software **MapFilter 2.0** é só clicar ne Menu Iniciar do Window. Em seguida ir na pasta LAP USP clicar em **MapFilter**. 
 
 <img src="https://user-images.githubusercontent.com/35964306/81248864-b84b7800-8ff3-11ea-8714-bf8a247334dd.png" width ="600">  
 Figura 1. Interface inicial.
