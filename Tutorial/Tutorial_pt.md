@@ -71,13 +71,25 @@ Limite Superior = mediana + mediana x v                                         
 Limite Inferior = mediana - mediana x v                                                                  Equação 2
 ```
 O valor de ` v ` deve ser informado pelo usuário no campo `  Variation of limit (%)  `
-<br>
+
+
+
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png" width="300"/></a> 
 </p>
-<br>
+
+
+
 No nosso exemplo iremos utilizar `v = 90`   
 
 
-
 Para realizar o filtragem global clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)
+
+
+
+<p>Após a filtragem global o **MapFilter** plto os dados remanecentes da filtragem. Neste exemplo o a filtragem global eliminou todos so dados com valores acima de 7.53 e todos os valores abaixo de 3.63.</p>
+
+
+<p align="center">
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a> 
+</p>
