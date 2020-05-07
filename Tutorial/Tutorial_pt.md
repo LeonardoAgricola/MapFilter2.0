@@ -15,7 +15,7 @@ Em seguida altere os campos conforme abaixo:
 
 ## Formato do arquivo de dados
 
-O **MapFilter** processa um único conjunto de dados em um arquivo em formato de texto (`.txt` ou `.csv`) por vez. O arquivo de texto deve conter pelo menos *três atributos numéricos*: dois atributos contendo a **latitude** e **longitude** e o **atributo** que será submetido à filtragem.
+O **MapFilter** processa um único conjunto de dados em um arquivo em formato de texto (`.txt` ou `.csv`) por vez. O arquivo de texto deve conter pelo menos *três atributos **numéricos_**: dois atributos contendo a **latitude** e **longitude** e o **atributo** que será submetido à filtragem.
 
 ### Importante
 
@@ -24,7 +24,7 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 * As coordenadas precisam ter o cabeçalho nomeados com as iniciais **"Lat"** e **"Long"** ou **"X"** e **"Y"**.
 
 
-## Filtragem de dados
+## Filtragem dos dados
 
 ### Iniciar o software
 
@@ -42,14 +42,38 @@ Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Windo
 
 Neste tutorial iremos utilizar como exemplo dados de produtivade de milho. 
 
-Para abrir o arquivo com os dados de produtividade de milho clique em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img2.png?raw="True")](#features) na tela inicial e selecione o arquivo  [`corn_yield.txt`](/Exemplo/).
+Para abrir o conjunto de dados a ser filtrado clique em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img2.png?raw="True")](#features) na tela inicial e selecione o arquivo [`corn_yield.txt`](/Exemplo/).
 
 
 ### Identificar o atributo a ser filtrado
 
 Identifique o atributo a ser filtrado:
 
+<p align="center">
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png" width="300"/></a> 
+</p> 
+
+
+Os dados do atributo a ser filtrado são plotados no visor e a estatística descritiva é calculada:
+
+<p align="center">
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="300"/></a> 
+</p>
+
+Além disso o campo  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img5.png?raw="True")](#) é liberado.
+
+### Filtragem global
+
+O filtro global foi adicionado antes do filtro local para evitar a inflação de variações dos valores do atributo na análise local devido a valores muito baixos ou muito altos. No filtro global, a mediana dos valores do atributo em análise é usado para calcular os limites de corte superior (Eq. 1) e inferior (Eq. 2):
+```
+Limite Superior = mediana + mediana x v
+Limite Inferior = mediana - mediana x v
+```
+O valor de ` v ` deve ser informado pelo usuário no campo  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img6.png?raw="True")](#).   
+No nosso exemplo iremos utilizar ` v = 90 `.  
+Para realizar a filtragem global bansta clicar em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw="True")](#).  
+
+
 
 
 <img src="https://user-images.githubusercontent.com/35964306/81243340-f2158200-8fe5-11ea-9e1b-d94e184f42f0.png" width ="400">
-<img src="https://user-images.githubusercontent.com/35964306/81240973-5b45c700-8fdf-11ea-81ce-8c73c6091f85.png" width="400" >
