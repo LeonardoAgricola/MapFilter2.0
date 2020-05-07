@@ -32,7 +32,7 @@ Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Windo
 <img src="https://user-images.githubusercontent.com/35964306/81248864-b84b7800-8ff3-11ea-8714-bf8a247334dd.png" width ="600">
 Figura 1. Interface inicial.    
 
-Para **abrir** o arquivo com os atributos que deseja procesar clique em  ![image](https://user-images.githubusercontent.com/35964306/81250000-52142480-8ff6-11ea-943b-3ee86174b19d.png)(#features) e seleciome o arquivo.
+Para **abrir** o arquivo com os atributos que deseja procesar clique em  [![image](https://user-images.githubusercontent.com/35964306/81250000-52142480-8ff6-11ea-943b-3ee86174b19d.png)](#features) e seleciome o arquivo.
 
 
 
