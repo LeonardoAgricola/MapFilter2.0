@@ -83,12 +83,13 @@ O valor de ` v ` deve ser informado pelo usuário no campo `  Variation of limit
 No nosso exemplo iremos utilizar `v = 90`   
 
 
-Para realizar o filtragem global clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)
+Para realizar o filtragem global clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)  
 
+<br></br>
 
+Após a filtragem global o **MapFilter** plota os dados remanecentes da filtragem. Neste exemplo a filtragem global eliminou todos os dados com valores de produtividade acima de 7.53 e todos os valores abaixo de 3.63.  
 
-<p>Após a filtragem global o **MapFilter** plto os dados remanecentes da filtragem. Neste exemplo o a filtragem global eliminou todos so dados com valores acima de 7.53 e todos os valores abaixo de 3.63.</p>
-
+<br></br>
 
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a> 
