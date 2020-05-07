@@ -33,7 +33,8 @@ Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Windo
   
   
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" width="700"/></a> <br/>  Interface inicial 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" width="700"/></a>          <br>  
+  <em> Interface inicial </em>
 </p> 
 
 
@@ -73,10 +74,6 @@ O valor de ` v ` deve ser informado pelo usuário no campo | [![image](https://g
 
 No nosso exemplo iremos utilizar ` v = 90 `. 
 
-<i class="fas fa-puzzle-piece" aria-hidden="true"></i> Puzzle Icon
-{: #puzzle}
 
-Para realizar a filtragem global bansta clicar em
-<div >
-  <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=True"></a>  
-</div>
+Para realizar a filtragem global bansta clicar em|  <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=True"></a>
+:--|:--
