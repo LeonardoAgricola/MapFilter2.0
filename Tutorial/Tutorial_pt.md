@@ -70,7 +70,11 @@ O filtro global foi adicionado antes do filtro local para evitar a inflação de
 Limite Superior = mediana + mediana x v                                                                  Equação 1
 Limite Inferior = mediana - mediana x v                                                                  Equação 2
 ```
-O valor de ` v ` deve ser informado pelo usuário no campo | [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img6.png?raw="True")](#)  
-
+O valor de ` v ` deve ser informado pelo usuário no campo `  Varitoin of limit (%)  `
+<p align="center">
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png" width="200"/></a> 
+</p>
+<br><br>
 No nosso exemplo iremos utilizar ` v = 90 `. 
-
+<br>
+Para realizar o filtragem global clique no íncone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png)](#features)
