@@ -1,6 +1,6 @@
 # MapFilter 2.0 Tutorial
 
-## Congiguração inicial
+## Configuração inicial
 
 O sofware **MapFilter 2.0** processa dados númericos com separador decimal `.` (ponto). A configuração pode ser feita através do painel de controle:
 
@@ -8,9 +8,9 @@ Painel de controle > Relógio e Região > Alterar Formato de data, hora ou núme
 
 Em seguida altere os campos conforme abaixo:  
 
-> Símbulo decimal: `.` (ponto)  
-> Símbulo de agrupamento de dígitos: `,` (vírgula)  
-> Separador de listas: `,` (vírgual)    
+> Símbolo decimal: `.` (ponto)  
+> Símbolo de agrupamento de dígitos: `,` (vírgula)  
+> Separador de listas: `,` (vírgula)    
 
 
 
