@@ -54,7 +54,9 @@ Os dados do atributo a ser filtrado são plotados no visor e a estatística desc
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a>
+     <br>
+     <em> Visualização dos dados originais </em>
 </p>
 <br/>
 
@@ -77,16 +79,19 @@ O valor de ` v ` deve ser informado pelo usuário no campo `  Variation of limit
 <br/>
 
 
-No nosso exemplo iremos utilizar `v = 90`
+No nosso exemplo iremos utilizar `v = 35`
 
 
 Para realizar o filtragem global clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)  
 
 
-Após a filtragem global o **MapFilter** plota e recalcula a estatistica descritiva dos dados remanecentes da filtragem. Neste exemplo a filtragem global eliminou todos os dados com valores de produtividade acima de 7.53 e abaixo de 3.63.  
+Após a filtragem global o **MapFilter** plota e recalcula a estatistica descritiva dos dados remanecentes da filtragem. Neste exemplo a filtragem global eliminou todos os dados com valores de produtividade acima de 7.53 e abaixo de 3.63.<br/>  
+<br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a>
+     <br>
+     <em> Visualização dos dados após a filtragem global </em>
 </p>
 
 
@@ -95,9 +100,11 @@ Após a filtragem global o **MapFilter** plota e recalcula a estatistica descrit
 O **filtro local** foi dividido em duas etapas: filtro local anisotrópico e isotrópico. <br/> 
 O *filtro anisotrópico* detecta todos os pontos localizados em uma faixa de *raio (R)* em torno de um ponto xi em uma *única direção*. O ponto xi é comparado com k vizinhos à frente e k vizinhos anteriores. O k é o número de vizinhos cuja distância euclidiana é menor ou igual ao R (linha azul na Figura). A mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 são aplicados ao ponto xi. Se o valor do ponto xi for maior ou menor dos limites superior e inferior de corte, ele será considerado um erro local e será excluído do conjunto de dados.<br/>
 O *filtro isotrópico* detecta todos os k pontos vizinhos localizados em um *R* em torno de um ponto xi em *qualquer direção*. Então, a mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 é aplicado ao ponto xi. O filtro exclui o ponto xi com um valor maior ou menor que os limites de corte superior e inferior.<br/>
-
+<br/>
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_pt.png" width="700"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_pt.png" width="700"/></a>
+     <br>
+     <em> Identificação dos pontos vizinhos na filtragem local </em>
 </p>
 
 
