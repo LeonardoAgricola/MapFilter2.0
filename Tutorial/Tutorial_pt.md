@@ -33,14 +33,14 @@ Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Windo
 
 
 <p align="center">
-     <a href="#"><img src="(https://user-images.githubusercontent.com/35964306/81259802-18034c80-900f-11ea-8860-1b1c990bfdb8.png" /></a><br/>Interface inicial
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" /></a><br/>Interface inicial
 </p>   
 
 ### Selecionar arquivo
 
 Neste tutorial iremos utilizar como exemplo dados de produtivade de milho. 
 
-Para abrir o arquivo com os dados de produtividade de milho clique em  [![image](https://user-images.githubusercontent.com/35964306/81252494-6e1ac480-8ffc-11ea-8e94-853bd8d54880.png?raw="True")](#features) na tela inicial e selecione o arquivo  [`corn_yield.txt`](/Exemplo/).
+Para abrir o arquivo com os dados de produtividade de milho clique em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img2.png?raw="True")](#features) na tela inicial e selecione o arquivo  [`corn_yield.txt`](/Exemplo/).
 
 
 ### Identificar o atributo a ser filtrado
