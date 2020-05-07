@@ -57,7 +57,7 @@ Identifique o atributo a ser filtrado:
 Os dados do atributo a ser filtrado são plotados no visor e a estatística descritiva é calculada:
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="300"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a> 
 </p>
 
 
@@ -69,11 +69,11 @@ O filtro global foi adicionado antes do filtro local para evitar a inflação de
 Limite Superior = mediana + mediana x v                                                                  Equação 1
 Limite Inferior = mediana - mediana x v                                                                  Equação 2
 ```
-O valor de ` v ` deve ser informado pelo usuário no campo  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img6.png?raw="True")](#).  
+O valor de ` v ` deve ser informado pelo usuário no campo | [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img6.png?raw="True")](#)  
 
 No nosso exemplo iremos utilizar ` v = 90 `. 
 
-Para realizar a filtragem global bansta clicar em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw="True")](#).  
+Para realizar a filtragem global bansta clicar em [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw="True")](#)  
 
 
 
