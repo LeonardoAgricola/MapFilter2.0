@@ -74,7 +74,3 @@ O valor de ` v ` deve ser informado pelo usuário no campo | [![image](https://g
 
 No nosso exemplo iremos utilizar ` v = 90 `. 
 
-<div>
-  <span></span>
-  <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img5.png" width="100" alt="" /></a>
-</div>
