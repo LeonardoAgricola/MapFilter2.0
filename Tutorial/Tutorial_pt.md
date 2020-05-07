@@ -32,7 +32,7 @@ Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Windo
 
 
 <div align="center"> 
-     [<img src="https://user-images.githubusercontent.com/35964306/81248864-b84b7800-8ff3-11ea-8714-bf8a247334dd.png?" width ="600"></img>](#features) <br /> Interface inicial
+     [<img src="https://user-images.githubusercontent.com/35964306/81248864-b84b7800-8ff3-11ea-8714-bf8a247334dd.png?" width ="600">](#features) <br /> Interface inicial
 </div>
 
 
