@@ -2,4 +2,4 @@
 
 Tche guri
 
-![IMG1](fig1.pnj)
+ ![IMG1](fig1.pnj)
