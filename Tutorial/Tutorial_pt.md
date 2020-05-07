@@ -26,7 +26,7 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 
 ## FIltragem de dados
 
-Para iniciar o software **MapFilter 2.0** vá em Menu principal > LAP USP > MapFilter. 
+Para iniciar o software **MapFilter 2.0** vá em Menu Iniciar do Window e na pasta LAP USP clicar em MapFilter. 
 
 <img src="https://user-images.githubusercontent.com/35964306/81248864-b84b7800-8ff3-11ea-8714-bf8a247334dd.png" width ="600">  
 Figura 1. Interface inicial.
