@@ -84,7 +84,8 @@ No nosso exemplo iremos utilizar `v = 35`
 
 Para realizar o filtragem global clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)  
 
-<br/>
+<br>
+
 Após a filtragem global o **MapFilter** plota e recalcula a estatistica descritiva dos dados remanecentes da filtragem. Neste exemplo a filtragem global eliminou todos os dados com valores de produtividade acima de 7.53 e abaixo de 3.63.<br/>  
 <br/>
 <p align="center">
