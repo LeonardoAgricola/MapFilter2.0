@@ -30,7 +30,7 @@ Then change the fields as follows:
 To start the **MapFilter 2.0** software, just click on the Window Start Menu. Then go to the **LAP USP** folder and click **MapFilter**.<br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" width="700"/></a>          <br>  
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png?raw=True" width="700"/></a>          <br>  
   <em> Software interface </em>
 </p>
 
@@ -45,14 +45,14 @@ To open the data set to be filtered, click in  [![image](https://github.com/Leon
 Identify the attribute to be filtered:
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png" width="300"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png?raw=True" width="300"/></a> 
 </p> 
 
 The attribute data to be filtered are plotted on the display and the descriptive statistics are calculated: <br/>
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png?raw=True" width="700"/></a>
      <br>
      <em> Raw data preview </em>
 </p>
@@ -69,7 +69,7 @@ The value of `v` must be entered by the user in the field` Variation of limit (%
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png" width="300"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png?raw=True" width="300"/></a> 
 </p>
 
 <br/>
@@ -85,7 +85,7 @@ After global filtering, **MapFilter** plots and recalculates the descriptive sta
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png?raw=True" width="700"/></a>
      <br>
      <em> Data visualization after global filtering </em>
 </p>
@@ -98,7 +98,7 @@ The _**isotropic filter**_ detects all k neighboring points located in a _**R**_
 
 <br/>
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_en.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_en.png?raw=True" width="700"/></a>
      <br>
      <em> Identification of neighboring points in local filtering </em>
 </p>
@@ -109,7 +109,7 @@ The value of the radius `R` must be informed by the user in the field` Spatial D
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_localVar.png" /></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_localVar.png?raw=True" /></a>
      <br>
 </p>
 <br/>
