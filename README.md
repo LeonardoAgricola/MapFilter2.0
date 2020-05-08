@@ -17,7 +17,7 @@ MapFilter-2.0.exe
 
 [Video](https://www.youtube.com/watch?v=7eFH_dt4OMw&t=23s) is also available on the YouTube channel of the [Laboratório de Agricultura de Precisão (ESALQ/USP)](https://www.youtube.com/channel/UCl6Lstj-l_1P8FHrpXKyAqA).
 
-## Contact information
+## Contact information 
 
 [Dr. José Paulo Molin](mailto:jpmolin@usp.br)  
 Associate Professor III at the University of São Paulo  
