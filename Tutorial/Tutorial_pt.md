@@ -37,7 +37,7 @@ Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Windo
 
 ### Selecionar arquivo
 
-Neste tutorial iremos utilizar como exemplo dados de produtivade de milho.<br/>
+Neste tutorial iremos utilizar como exemplo dados de produtividade de milho.<br/>
  
 Para abrir o conjunto de dados a ser filtrado clique em  [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img2.png?raw="True")](#features) na tela inicial e selecione o arquivo [`corn_yield.txt`](/Exemplo/).<br/>
 
@@ -131,7 +131,7 @@ Após a filtragem local o **MapFilter** plota e recalcula a estatistica descriti
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_local.png" width="700"/></a>
      <br>
-     <em> Visualização dos dados após a filtragem loval </em>
+     <em> Visualização dos dados após a filtragem local </em>
 </p>
 <br/>
 
