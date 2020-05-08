@@ -2,26 +2,26 @@
 
 ## Overview
 
-O  `MapFilter 2.0` é um software livre destinado a análise e remoção de dados inconsistentes em dados de alta densidade (dados de monitor de colheita, de sensores de plantas, de sensores de solo). É um software simples, com uma interface amigável, cujo objetivo é auxiliar os usuários a gerar mapas relacionados às suas lavouras com maior confiabilidade a partir da otimização da qualidade dos dados. Executa a filtragem espacial destes dados por meio da análise global e local (isotrópica e anisotrópica) levando em consideração os valores das vizinhanças. A visualização dos dados após a filtragem permite que o usuário faça uma rápida análise da qualidade da filtragem espacial.
+`MapFilter 2.0` is free software to analysis and removal of inconsistent data in high density data (data from crop monitor, plant sensors, soil sensors). It is a simple software, with a friendly interface, whose objective is to help users to generate maps related to their crops with greater reliability from the optimization of data quality. It performs the spatial filtering of these data through global and local analysis (isotropic and anisotropic) taking into account the neighborhood values. Visualization of data after filtering allows the user to make a quick analysis of the quality of spatial filtering.
 
-## Instalação do software
+## Installing the software
 
-Para instalar a última versão do `MapFilter` faça o download pelo [link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip), em seguida descompacte a pasta `MapFilter 2.0.zip` e execute o arquivo:
+To install the latest version of `MapFilter` download it from [link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip), then unzip the `MapFilter 2.0.zip` folder and run the file:
 ```
 MapFilter-2.0.exe
 ```
 ## Tutorial
 
-[Versão em inglês](Tutorial/Tutorial_en.md)        
+[English version](Tutorial/Tutorial_en.md)        
 [Versão em Português](Tutorial/Tutorial_pt.md)
 
-Também está disponível o [vídeo](https://www.youtube.com/watch?v=7eFH_dt4OMw&t=23s) tutorial no canal do [Laboratório de Agricultura de Precisão (ESALQ/USP)](https://www.youtube.com/channel/UCl6Lstj-l_1P8FHrpXKyAqA).
+[Video](https://www.youtube.com/watch?v=7eFH_dt4OMw&t=23s) is also available on the YouTube channel of the [Laboratório de Agricultura de Precisão (ESALQ/USP)](https://www.youtube.com/channel/UCl6Lstj-l_1P8FHrpXKyAqA).
 
-## Informações de contato
+## Contact information
 
 [Dr. José Paulo Molin](mailto:jpmolin@usp.br)  
-Professor Associado III na Universidade de São Paulo           
-Coordenador do Laboratório de Agricultura de Precisão - LAP     
+Associate Professor III at the University of São Paulo
+Coordinator of the Precision Agriculture Laboratory - LAP  
 Av. Pádua Dias, 11 – C.P. 09 – Piracicaba - SP    
 Depto de Eng. de Biossistemas, USP/ESALQ    
 CEP: 13418-900    
