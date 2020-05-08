@@ -116,7 +116,7 @@ O valor do raio `R` deve ser informado pelo usuário no campo `Spatial Dependenc
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_localVar.png" /></a>
      <br>
 </p>
-
+<br/>
 
 No nosso exemplo iremos utilizar `R = 100` e `v = 5`
 
@@ -140,6 +140,3 @@ Após a filtragem local o **MapFilter** plota e recalcula a estatistica descriti
 Os dados que não foram excluídos pelo filtro podem ser salvos em um arquivo tipo texto (`.txt` ou `.csv`).<br/> 
 
 Para salvar os dados clique no ícone [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/salvar.png?raw=true)](#features) 
-
-### Fim
-
