@@ -4,7 +4,7 @@
 
 `MapFilter 2.0` is a free software to analysis and removal the inconsistent data in high density data (data from crop monitor, plant sensors, soil sensors). It is a simple software, with a friendly interface, whose objective is to help users to generate maps related to their crops with greater reliability from the optimization of data quality. It performs the spatial filtering of these data through global and local analysis (isotropic and anisotropic) taking into account the neighborhood values. Visualization of data after filtering allows the user to make a quick analysis of the quality of spatial filtering.
 
-## Installing the software
+## Install
 
 To install the latest version of `MapFilter` download it from [link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip), then unzip the `MapFilter 2.0.zip` folder and run the file:
 ```
