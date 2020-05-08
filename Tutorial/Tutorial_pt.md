@@ -20,7 +20,7 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 ### Importante
 
 * A primeira linha do arquivo deve conter um cabeçalho (denominação) de atributos; 
-* As coordenadas devem estar no datum WGS 84 fornecido em **coordenadas geográficas (graus decimais)**, que é uma forma comum para o armazenamento de coordenadas em registradores de dados agrícolas **ou** na forma **métrica (UTM)**; 
+* As coordenadas devem estar no datum WGS 84 ou equivalente fornecido em **coordenadas geográficas (graus decimais)**, que é uma forma comum para o armazenamento de coordenadas em registradores de dados agrícolas **ou** na forma **métrica (UTM)**; 
 * As coordenadas precisam ter o cabeçalho nomeados com as iniciais **"Lat"** e **"Long"** ou **"X"** e **"Y"**.
 
 
@@ -62,7 +62,7 @@ Os dados do atributo a ser filtrado são plotados no visor e a estatística desc
 
 ### Filtragem global
 
-O filtro global foi adicionado antes do filtro local para evitar a inflação de variações dos valores do atributo na análise local devido a valores muito baixos ou muito altos. No filtro global, a mediana dos valores do atributo em análise é usado para calcular os limites de corte superior (Eq. 1) e inferior (Eq. 2):
+O filtro global foi adicionado antes do filtro local para evitar a inflação de variações dos valores do atributo na análise local devido a valores muito baixos ou muito altos. No filtro global, a mediana dos valores do atributo em análise é usada para calcular os limites de corte superior (Eq. 1) e inferior (Eq. 2):
 ```
 Limite Superior = mediana + mediana x v                                                                  Equação 1
 Limite Inferior = mediana - mediana x v                                                                  Equação 2
@@ -99,7 +99,7 @@ Após a filtragem global o **MapFilter** plota e recalcula a estatistica descrit
 
 O **filtro local** foi dividido em duas etapas: filtro local anisotrópico e isotrópico. <br/> 
 O _**filtro anisotrópico**_ detecta todos os pontos localizados em uma faixa de _**raio (R)**_ em torno de um ponto xi em uma _**única direção**_. O ponto xi é comparado com k vizinhos à frente e k vizinhos anteriores. O k é o número de vizinhos cuja distância euclidiana é menor ou igual ao R (linha azul na Figura). A mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 são aplicados ao ponto xi. Se o valor do ponto xi for maior ou menor dos limites superior e inferior de corte, ele será considerado um erro local e será excluído do conjunto de dados.<br/>
-O _**filtro isotrópico**_ detecta todos os k pontos vizinhos localizados em um _**R**_ em torno de um ponto xi em _**qualquer direção**_. Então, a mediana desses k vizinhos é calculada e a Eq. 1 e Eq. 2 é aplicado ao ponto xi. O filtro exclui o ponto xi com um valor maior ou menor que os limites de corte superior e inferior.<br/>
+O _**filtro isotrópico**_ detecta todos os k pontos vizinhos localizados em um _**R**_ em torno de um ponto xi em _**qualquer direção**_. Então, a mediana desses k vizinhos é calculada e as Eq. 1 e 2 são aplicadas ao ponto xi. O filtro exclui o ponto xi com um valor maior ou menor que os limites de corte superior e inferior.<br/>
 <br/>
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_pt.png" width="700"/></a>
