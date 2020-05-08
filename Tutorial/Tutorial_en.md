@@ -2,7 +2,7 @@
 
 ## Initial setting
 
-The ** MapFilter 2.0 ** processes numerical data with a decimal separator `.` (point). The configuration can be done through the control panel:
+The **MapFilter 2.0** processes numerical data with a decimal separator `.` (point). The configuration can be done through the control panel:
 
 Control panel> Clock and Region> Change date, time or number format> Additional settings
 
