@@ -8,9 +8,9 @@ Control panel> Clock and Region> Change date, time or number format> Additional 
 
 Then change the fields as follows:
 
-> Decimal symbol: `.` (point)
-> Digit grouping symbol: `,` (comma)
-> List separator: `,` (comma)
+> Decimal symbol: `.` (point)  
+> Digit grouping symbol: `,` (comma)  
+> List separator: `,` (comma)  
 
 
 ## Data file format
@@ -80,8 +80,10 @@ In our example we will use `v = 35`
 To perform global filtering click on the icon [![image](https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img7.png?raw=true)](#features)  
 
 <br>
+
 After global filtering, **MapFilter** plots and recalculates the descriptive statistics of the remaining filtering data. In this example, global filtering eliminated all data with productivity values above 7.53 and below 3.63. <br/>
 <br/>
+
 <p align="center">
      <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a>
      <br>
