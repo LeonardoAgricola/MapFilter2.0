@@ -15,7 +15,7 @@ Then change the fields as follows:
 
 ## Data file format
 
-**MapFilter** processes a single data set in a text format file (`.txt` or` .csv`) at a time. The text file must contain at least _**three attributes numeric**_: two attributes containing the **latitude** and **longitude** and the **attribute** that will be subjected to filtering.
+**MapFilter** processes a single data set in a text format file (`.txt` or` .csv`) at a time. The text file must contain at least _**three attributes numeric**_: two attributes containing the **latitude** and **longitude** and the **attribute** that will be filtering.
 
 ### Important
 
