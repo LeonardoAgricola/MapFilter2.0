@@ -20,8 +20,8 @@ MapFilter-2.0.exe
 ## Contact information
 
 [Dr. José Paulo Molin](mailto:jpmolin@usp.br)  
-Associate Professor III at the University of São Paulo
-Coordinator of the Precision Agriculture Laboratory - LAP  
+Associate Professor III at the University of São Paulo  
+Coordinator of the Precision Agriculture Laboratory - LAP    
 Av. Pádua Dias, 11 – C.P. 09 – Piracicaba - SP    
 Depto de Eng. de Biossistemas, USP/ESALQ    
 CEP: 13418-900    
