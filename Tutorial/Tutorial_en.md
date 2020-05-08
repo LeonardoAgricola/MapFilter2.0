@@ -20,7 +20,7 @@ Then change the fields as follows:
 ### Important
 
 * The first line of the file must contain a header (name) of attributes;
-* Coordinates must be in the WGS 84 datum provided in **geographic coordinates (decimal degrees)**, which is a common way for storing coordinates in agricultural data recorders or in **metric form (UTM)**;
+* Coordinates must be in the WGS 84 datum provided in **geographic coordinates (decimal degrees)** or equivalent, which is a common way for storing coordinates in agricultural data recorders or in **metric form (UTM)**;
 * The coordinates must have the header named with the initials **"Lat"** and **"Long"** or **"X"** and **"Y"**.
 
 ## Data filtering
@@ -94,7 +94,7 @@ After global filtering, **MapFilter** plots and recalculates the descriptive sta
 
 The **local filter** was divided into two stages: anisotropic and isotropic local filters. <br/>
 The _**anisotropic filter**_ detects all points located in a range of _**radius (R)**_ around a point xi in a _**single direction**_. Point xi is compared with k neighbors ahead and k neighbors before. K is the number of neighbors whose Euclidean distance is less than or equal to R (blue line in Figure). The median of these k neighbors is calculated and Eq. 1 and Eq. 2 are applied to point xi. If the value of point xi is greater or less than the upper and lower cutoff limits, it will be considered a local error and will be excluded from the data set. <br/>
-The _**isotropic filter**_ detects all k neighboring points located in a _**R**_ around a point xi in _**any direction**_. Then, the median of these k neighbors is calculated and Eq. 1 and Eq. 2 is applied to point xi. The filter excludes point xi with a value greater or less than the upper and lower cut limits. <br/>
+The _**isotropic filter**_ detects all k neighboring points located in a _**R**_ around a point xi in _**any direction**_. Then, the median of these k neighbors is calculated and Eq. 1 and 2 are applied to point xi. The filter excludes point xi with a value greater or less than the upper and lower cut limits. <br/>
 
 <br/>
 <p align="center">
