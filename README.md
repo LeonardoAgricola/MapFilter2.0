@@ -18,9 +18,14 @@ MapFilter-2.0.exe
 [Video](https://www.youtube.com/watch?v=7eFH_dt4OMw&t=23s) is also available on the YouTube channel of the [Laboratório de Agricultura de Precisão (ESALQ/USP)](https://www.youtube.com/channel/UCl6Lstj-l_1P8FHrpXKyAqA).
 
 ## Contact information 
+[Leonardo Felipe Maldaner](mailto:maldanerlf@hotmail.com)    
+Agricultural Engineer - UFGD    
+PhD student in Agricultural Systems Engineering - ESALQ USP    
 
 [Dr. José Paulo Molin](mailto:jpmolin@usp.br)  
 Associate Professor III at the University of São Paulo  
-Coordinator of the Precision Agriculture Laboratory - LAP    
+Coordinator of the Precision Agriculture Laboratory - LAP      
+
+Escola Superior de Agricultura "Luiz de Queiroz"  
 Av. Pádua Dias, 11 – 13418-900 – Piracicaba - SP    
 Biosystems Engineering Department, USP/ESALQ    
