@@ -24,8 +24,7 @@ PhD student in Agricultural Systems Engineering - ESALQ USP
 
 [Dr. José Paulo Molin](mailto:jpmolin@usp.br)  
 Associate Professor III at the University of São Paulo  
-Coordinator of the Precision Agriculture Laboratory - LAP      
-
-Escola Superior de Agricultura "Luiz de Queiroz"  
+Coordinator of the Precision Agriculture Laboratory - LAP        
+  
 Av. Pádua Dias, 11 – 13418-900 – Piracicaba - SP    
 Biosystems Engineering Department, USP/ESALQ    
