@@ -125,7 +125,7 @@ After local filtering **MapFilter** plots and recalculates the descriptive stati
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_local.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_local.png?raw=True" width="700"/></a>
      <br>
      <em> Data visualization after local filtering </em>
 </p>
