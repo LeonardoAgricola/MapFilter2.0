@@ -31,7 +31,7 @@ O **MapFilter** processa um único conjunto de dados em um arquivo em formato de
 Para iniciar o software **MapFilter 2.0** é só clicar no Menu Iniciar do Window. Em seguida ir na pasta **LAP USP** e clicar em **MapFilter**.<br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png" width="700"/></a>          <br>  
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/telaIinicial.png?raw=True" width="700"/></a>          <br>  
   <em> Interface inicial </em>
 </p>
 
@@ -46,7 +46,7 @@ Para abrir o conjunto de dados a ser filtrado clique em  [![image](https://githu
 Identifique o atributo a ser filtrado:<br/>
  
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png" width="300"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img3.png?raw=True" width="300"/></a> 
 </p> 
   
 
@@ -54,7 +54,7 @@ Os dados do atributo a ser filtrado são plotados no visor e a estatística desc
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/img4.png?raw=True" width="700"/></a>
      <br>
      <em> Visualização dos dados originais </em>
 </p>
@@ -73,7 +73,7 @@ O valor de ` v ` deve ser informado pelo usuário no campo `  Variation of limit
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png" width="300"/></a> 
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_globalVar.png?raw=True" width="300"/></a> 
 </p>
 
 <br/>
@@ -89,7 +89,7 @@ Para realizar o filtragem global clique no ícone [![image](https://github.com/L
 Após a filtragem global o **MapFilter** plota e recalcula a estatistica descritiva dos dados remanecentes da filtragem. Neste exemplo a filtragem global eliminou todos os dados com valores de produtividade acima de 7.53 e abaixo de 3.63.<br/>  
 <br/>
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_global.png?raw=True" width="700"/></a>
      <br>
      <em> Visualização dos dados após a filtragem global </em>
 </p>
@@ -102,7 +102,7 @@ O _**filtro anisotrópico**_ detecta todos os pontos localizados em uma faixa de
 O _**filtro isotrópico**_ detecta todos os k pontos vizinhos localizados em um _**R**_ em torno de um ponto xi em _**qualquer direção**_. Então, a mediana desses k vizinhos é calculada e as Eq. 1 e 2 são aplicadas ao ponto xi. O filtro exclui o ponto xi com um valor maior ou menor que os limites de corte superior e inferior.<br/>
 <br/>
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_pt.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/esquema_pt.png?raw=True" width="700"/></a>
      <br>
      <em> Identificação dos pontos vizinhos na filtragem local </em>
 </p>
@@ -113,7 +113,7 @@ O valor do raio `R` deve ser informado pelo usuário no campo `Spatial Dependenc
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_localVar.png" /></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_localVar.png?raw=True" /></a>
      <br>
 </p>
 <br/>
@@ -129,7 +129,7 @@ Após a filtragem local o **MapFilter** plota e recalcula a estatistica descriti
 <br/>
 
 <p align="center">
-     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_local.png" width="700"/></a>
+     <a href="#"><img src="https://github.com/LeonardoTche/MapFilter2.0/blob/master/Tutorial/Img/filt_local.png?raw=True" width="700"/></a>
      <br>
      <em> Visualização dos dados após a filtragem local </em>
 </p>
