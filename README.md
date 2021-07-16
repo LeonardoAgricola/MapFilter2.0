@@ -17,6 +17,10 @@ MapFilter-2.0.exe
 
 [Video](https://www.youtube.com/watch?v=7eFH_dt4OMw&t=23s) is also available on the YouTube channel of the [Laboratório de Agricultura de Precisão (ESALQ/USP)](https://www.youtube.com/channel/UCl6Lstj-l_1P8FHrpXKyAqA).
 
+## Citation
+
+Maldaner, L. F., Molin, J. P., & Spekken, M. (2021). Methodology to filter out outliers in high spatial density data to improve maps reliability. *Scientia Agricola*, 79.  [https://doi.org/10.1590/1678-992X-2020-0178](https://www.scielo.br/j/sa/a/7HzMhcvDpFMJx6pTGrSQLBw/?lang=en) 
+
 ## Contact information 
 [Leonardo Felipe Maldaner](mailto:maldanerlf@hotmail.com)    
 Agricultural Engineer - UFGD    
