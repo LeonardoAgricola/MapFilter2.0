@@ -6,7 +6,7 @@
 
 ## Install
 
-To install the latest version of `MapFilter` download it from [link]( https://www.agriculturadeprecisao.org.br/wp-content/uploads/2019/08/MapFilter-2.0.zip), then unzip the `MapFilter 2.0.zip` folder and run the file:
+To install the latest version of `MapFilter` download it from [link]( https://github.com/LeonardoAgricola/MapFilter2.0/releases/download/2.0/MapFilter.2.1.exe) and run the file:
 ```
 MapFilter-2.0.exe
 ```
