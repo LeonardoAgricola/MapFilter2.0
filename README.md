@@ -8,7 +8,7 @@
 
 To install the latest version of `MapFilter` download it from [link]( https://github.com/LeonardoAgricola/MapFilter2.0/releases/download/2.0/MapFilter.2.1.exe) and run the file:
 ```
-MapFilter-2.0.exe
+MapFilter.2.1.exe
 ```
 ## Tutorial
 
