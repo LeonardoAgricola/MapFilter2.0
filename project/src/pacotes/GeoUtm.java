@@ -1,17 +1,3 @@
-package pacotes;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Leonardo Felipe Maldaner
- * @author Mark Spekken
- * @author Jose Paulo Molin
- */
 
 public class GeoUtm {
 
@@ -20,7 +6,7 @@ public class GeoUtm {
     int Zone;
     char Letter;
 
-    public String[] Deg2UTM(double Lat, double Lon) {
+    public Double[] Deg2UTM(double Lat, double Lon) {
         
         if (Lat < 90 && Lat > -90 && Lon < 180 && Lon >-180){       
             Zone = (int) Math.floor(Lon / 6 + 31);
@@ -77,9 +63,6 @@ public class GeoUtm {
             Easting = Lon;
         }
         
-        String[] coord = new String[2];
-        coord[0] = String.valueOf(Easting);
-        coord[1] = String.valueOf(Northing);
-        return coord;
+        return new Double[]{Easting, Northing};
     }
 }
