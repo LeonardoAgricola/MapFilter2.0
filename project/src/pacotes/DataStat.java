@@ -1,91 +1,81 @@
-package pacotes;
-
+import java.util.ArrayList;
 import java.util.Arrays;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
- * @author Leonardo Felipe Maldaner
- * @author Mark Spekken
- * @author Jose Paulo Molin
+ * Utility class for calculating statistics and classifying data.
+ * 
  */
-
 public class DataStat {
-    
-    public double[] estatist(String[][] dat,int colAt) {
-        double[] valores = new double[6];
-        int nPts = (int) Double.parseDouble(dat[0][0]);
-        //System.out.println(Double.parseDouble(dat[2][colAt]));
-        double min = Double.parseDouble(dat[2][colAt]);
-        double max = min;
-        double med;
-        double des;
-        double cv;
-        double soma1 = 0;
-        double soma2 = 0;
-        for (int i = 1; i < nPts; i++) {
-            soma1 = soma1 + Double.parseDouble(dat[i][colAt]);
-            if (Double.parseDouble(dat[i][colAt]) < min) {
-                min = Double.parseDouble(dat[i][colAt]);
+
+    /**
+     * Calculates various statistics from the given data column.
+     * 
+     * @param data  The input data as a nested list of doubles.
+     * @return An array containing the number of points, minimum value, maximum value, mean, standard deviation, and coefficient of variation.
+     */
+    public double[] calculateStatistics(ArrayList<ArrayList<Double>> data) {
+        double[] statistics = new double[6];
+        int nPoints = data.size();
+        double min = Double.MAX_VALUE;
+        double max = Double.MIN_VALUE;
+        double sum = 0.0;
+
+        for (ArrayList<Double> point : data) {
+            double value = point.get(2);
+            sum += value;
+            if (value < min) {
+                min = value;
             }
-            if (Double.parseDouble(dat[i][colAt]) > max) {
-                max = Double.parseDouble(dat[i][colAt]);
+            if (value > max) {
+                max = value;
             }
         }
-        med = soma1 / nPts;//calcula a media
-        for (int i = 1; i < nPts; i++) {
-            soma2 = soma2 + Math.pow((Double.parseDouble(dat[i][colAt]) - med), 2);
+
+        double mean = sum / nPoints;
+        double sumSquares = 0.0;
+
+        for (ArrayList<Double> point : data) {
+            double value = point.get(2);
+            sumSquares += Math.pow(value - mean, 2);
         }
-        des = Math.sqrt(soma2 / nPts);//calcula o desvio
-        cv = (des / med) * 100;//calcula o CV
-        valores[0] = nPts;//numero de pontos
-        valores[1] = min;//valor minimo
-        valores[2] = max;//valor maximo
-        valores[3] = med;//valor media
-        valores[4] = des;//desvio padrao
-        valores[5] = cv;//coeficiente de variacao
-        return valores;
+
+        double stdDev = Math.sqrt(sumSquares / nPoints);
+        double cv = (stdDev / mean) * 100;
+
+        statistics[0] = nPoints; // Number of points
+        statistics[1] = min;     // Minimum value
+        statistics[2] = max;     // Maximum value
+        statistics[3] = mean;    // Mean value
+        statistics[4] = stdDev;  // Standard deviation
+        statistics[5] = cv;      // Coefficient of variation
+
+        return statistics;
     }
 
-    public double[] classificar(String[][] dat,int colAt) {
+    /**
+     * Classifies data into six quantiles based on the given column.
+     * 
+     * @param data  The input data as a nested list of doubles.
+     * @return An array containing the values at the 2nd, 20th, 40th, 60th, 80th, and last percentiles.
+     */
+    public double[] classifyData(ArrayList<ArrayList<Double>> data) {
+        int nPoints = data.size();
+        double[] values = new double[nPoints];
+
+        for (int i = 0; i < nPoints; i++) {
+            values[i] = data.get(i).get(2);
+        }
+
+        Arrays.sort(values);
+
         double[] classes = new double[6];
-        int nPts = (int) Double.parseDouble(dat[0][0]);
-        double[] data = new double[nPts + 1];
-        for (int i = 2; i < nPts; i++) {
-            data[i] = Double.parseDouble(dat[i][colAt]);
-        }
-        Arrays.sort(data, 2, nPts);
-        int q1 = 2;
-        int q2 = (int) Math.round(nPts * 0.2);
-        int q3 = (int) Math.round(nPts * 0.4);
-        int q4 = (int) Math.round(nPts * 0.6);
-        int q5 = (int) Math.round(nPts * 0.8);
-        int q6 = nPts-1;
-        for (int i = 1; i < nPts; i++) {
-            if (i == q1) {
-                classes[0] = data[i];
-            }
-            if (i == q2) {
-                classes[1] = data[i];
-            }
-            if (i == q3) {
-                classes[2] = data[i];
-            }
-            if (i == q4) {
-                classes[3] = data[i];
-            }
-            if (i == q5) {
-                classes[4] = data[i];
-            }
-            if (i == q6) {
-                classes[5] = data[i];
-            }
-        }
+        classes[0] = values[1];
+        classes[1] = values[(int) Math.round(nPoints * 0.2)];
+        classes[2] = values[(int) Math.round(nPoints * 0.4)];
+        classes[3] = values[(int) Math.round(nPoints * 0.6)];
+        classes[4] = values[(int) Math.round(nPoints * 0.8)];
+        classes[5] = values[nPoints - 1];
+
         return classes;
     }
 }
