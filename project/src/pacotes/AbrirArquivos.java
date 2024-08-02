@@ -1,128 +1,115 @@
-package pacotes;
-
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
- *
- * @author Leonardo Felipe Maldaner
- * @author Mark Spekken
- * @author Jose Paulo Molin
+ * Utility class for reading files and extracting data.
+ * 
+ * Authors: Leonardo Felipe Maldaner, Mark Spekken, Jose Paulo Molin
  */
-
 public class AbrirArquivos {
 
-    public String[] cabecalho(File x) throws IOException {
-        String[] cabeca = new String[500];
-        int conta = 1;
-        try {
-            FileReader arq = new FileReader(x);
-            BufferedReader ler = new BufferedReader(arq);
-            String linha = ler.readLine();
-            char[] line = linha.toCharArray();
-            int inCol = 0;
-            conta = 1;
-            for (int i = 0; i < line.length; i++) {
-                String car = String.valueOf(line[i]);
-                if (",".equals(car) || ";".equals(car)) {
-                    cabeca[conta] = linha.substring(inCol, i);
-                    inCol = i + 1;
-                    conta++;
+    private final GeoUtm transformer = new GeoUtm();
+
+    /**
+     * Reads the header from the given file.
+     *
+     * @param file the file to read the header from
+     * @return an array of header names with the first element being the count of
+     *         columns
+     * @throws IOException if an I/O error occurs
+     */
+    public String[] readHeader(File file) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String line = reader.readLine();
+            if (line == null) {
+                throw new IOException("File is empty.");
+            }
+
+            String[] values = line.split("[,;]");
+            String[] result = new String[values.length + 1];
+            result[0] = String.valueOf(values.length);
+            for (int i = 0; i < values.length; i++) {
+                result[i + 1] = values[i].trim();
+            }
+            return values;
+        } catch (IOException ex) {
+            Logger.getLogger(AbrirArquivos.class.getName()).log(Level.SEVERE, null, ex);
+            throw ex;
+        }
+    }
+
+    /**
+     * Reads data from the given file and converts it into a nested list of doubles.
+     *
+     * @param file     the file to read data from
+     * @param toFilter the index of the column to filter
+     * @return a nested list of doubles containing the parsed data
+     * @throws IOException if an I/O error occurs
+     */
+    public ArrayList<ArrayList<Double>> fileToArray(File file, int toFilter) throws IOException {
+        ArrayList<ArrayList<Double>> valuesList = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+            String[] headers = readHeader(file);
+            int idx = findIndex(headers, new String[] { "LONG", "X" });
+            int idy = findIndex(headers, new String[] { "LAT", "Y" });
+            int idz = toFilter;
+
+            if (idx == -1 || idy == -1) {
+                throw new IOException("Required columns not found in the header.");
+            }
+
+            reader.readLine(); // skip header line
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] values = line.split("[,;]");
+                double lat = Double.parseDouble(values[idy]);
+                double lon = Double.parseDouble(values[idx]);
+                double value = Double.parseDouble(values[idz]);
+
+                ArrayList<Double> coordinates = new ArrayList<>();
+                coordinates.add(lat);
+                coordinates.add(lon);
+                coordinates.add(value);
+                Double[] xy = transformer.Deg2UTM(lat, lon);
+                coordinates.add(xy[0]);
+                coordinates.add(xy[1]);
+
+                valuesList.add(coordinates);
+            }
+        } catch (IOException | NumberFormatException ex) {
+            Logger.getLogger(AbrirArquivos.class.getName()).log(Level.SEVERE, null, ex);
+            throw new IOException("Error processing file", ex);
+        }
+        return valuesList;
+    }
+
+    /**
+     * Finds the index of a column in the header line that matches any of the given
+     * substrings.
+     *
+     * @param header     the header line as an array of strings
+     * @param substrings the substrings to search for
+     * @return the index of the matching column or -1 if not found
+     * @throws IOException if the first element of the header is not a valid number
+     */
+    private int findIndex(String[] header, String[] substrings) throws IOException {
+        int count = 0;
+        for (String element: header) {
+            element = element.toUpperCase();
+            for (String substring : substrings) {
+                if (element.contains(substring.toUpperCase())) {
+                    return count;
                 }
             }
-            cabeca[conta] = linha.substring(inCol, line.length);
-          } catch (FileNotFoundException ex) {
-            Logger.getLogger(AbrirArquivos.class.getName()).log(Level.SEVERE, null, ex);
+            count++;
         }
-        cabeca[0] = String.valueOf(conta);
-        return cabeca;
-    }
-
-    public String[][] arquivo(File x) throws IOException {
-        int conta;
-        String[][] matriz = new String[500000][100];
-        conta = 1;  
-                
-        try {
-            FileReader lerarquivo22 = new FileReader(x);
-            try (BufferedReader arq1 = new BufferedReader(lerarquivo22)) {
-                int conta2 = 0;
-                int inCol;
-                arq1.readLine();
-                String linha = arq1.readLine();
-                while (linha != null) {
-                    char[] dados = linha.toCharArray();
-                    inCol = 0;
-                    for (int i = 1; i < dados.length; i++) {
-                        String car = String.valueOf(dados[i]);
-                        if (",".equals(car) || ";".equals(car)) {
-                            matriz[conta][conta2] = linha.substring(inCol, i);
-                            conta2++;
-                            inCol = i + 1;
-                        }
-                    }
-                    matriz[conta][conta2] = linha.substring(inCol,dados.length);
-                    conta2 = 0;
-                    conta++;
-                    linha = arq1.readLine();
-                }
-            }
-           } catch (FileNotFoundException ex) {
-            Logger.getLogger(AbrirArquivos.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        matriz[0][0] = String.valueOf(conta);
-        return matriz;
-    }
-
-    public int findX(String[] line) throws IOException {
-        int x = 0;
-        for (int i = 0; i < ((int) Double.parseDouble(line[0])); i++) {
-            String esc = line[i];
-            switch (esc) {
-                case "Long":
-                case "Longitude":
-                case "long":
-                case "longitude":
-                case "LONG":
-                case "LONGITUDE":
-                case "X":
-                    x = i;
-                    break;
-                default:
-                    break;
-            }
-        }
-        return x - 1;
-    }
-
-    public int findY(String[] line) throws IOException {
-        int y = 0;
-        for (int i = 1; i < ((int) Double.parseDouble(line[0])); i++) {
-            String esc = line[i];
-            switch (esc) {
-                case "Lat":
-                case "Latitude":
-                case "lat":
-                case "latitude":
-                case "LAT":
-                case "LATITUDE":
-                case "Y":
-                    y = i;
-                    break;
-                default:
-                    break;
-            }
-        }
-        return y - 1;
+        return -1;
     }
 }
