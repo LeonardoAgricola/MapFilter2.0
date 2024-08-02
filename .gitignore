@@ -1,1 +1,8 @@
 .png
+
+.vscode
+.code-workspace
+
+
+cmake-build-debug
+.idea
