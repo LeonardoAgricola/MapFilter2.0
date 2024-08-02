@@ -1,8 +1,9 @@
-package pacotes;
-
 import java.awt.Color;
 import java.awt.geom.Ellipse2D;
+import java.util.ArrayList;
+
 import javax.swing.JComponent;
+
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -19,29 +20,33 @@ public class DisplayPontos {
     XYSeries step3 = new XYSeries("3");
     XYSeries step4 = new XYSeries("4");
     XYSeries step5 = new XYSeries("5");
-   
+
     XYSeriesCollection steps = new XYSeriesCollection();
 
     double maxX, minX, minY, maxY, maxL;
 
-    public void calcXY(String[][] dat, int n, int x, int y) {
-        minX = Double.parseDouble(dat[2][x]);
-        maxX = minX;
-        minY = Double.parseDouble(dat[2][y]);
-        maxY = minX;
-       
+    public void calcXY(ArrayList<ArrayList<Double>> data) {
+        minX = Double.POSITIVE_INFINITY;
+        maxX = Double.NEGATIVE_INFINITY;
+        minY = Double.POSITIVE_INFINITY;
+        maxY = Double.NEGATIVE_INFINITY;
+        
+        int n = data.size();
+
         for (int i = 1; i < n; i++) {
-            if (Double.parseDouble(dat[i][x])< minX) {
-                minX = Double.parseDouble(dat[i][x]);
+            double xcoord = data.get(i).get(3);
+            double ycoord = data.get(i).get(4);
+            if (xcoord < minX) {
+                minX = xcoord;
             }
-            if (Double.parseDouble(dat[i][x]) > maxX) {
-                maxX = Double.parseDouble(dat[i][x]);
+            if (xcoord > maxX) {
+                maxX = xcoord;
             }
-            if (Double.parseDouble(dat[i][y]) < minY) {
-                minY = Double.parseDouble(dat[i][y]);
+            if (ycoord < minY) {
+                minY = ycoord;
             }
-            if (Double.parseDouble(dat[i][y]) > maxY) {
-                maxY = Double.parseDouble(dat[i][y]);
+            if (ycoord > maxY) {
+                maxY = ycoord;
             }
         }
 
@@ -53,15 +58,12 @@ public class DisplayPontos {
 
     }
 
-    public void separSteps(String[][] dat, double[] classes, int n, int x,
-            int y, int prod) {
-   
+    public void separSteps(ArrayList<ArrayList<Double>> data, double[] classes) {
+
         double x1 = classes[1];
         double x2 = classes[2];
         double x3 = classes[3];
         double x4 = classes[4];
-      
-        double pr, xx, yy;
 
         step1.clear();
         step2.clear();
@@ -70,24 +72,24 @@ public class DisplayPontos {
         step5.clear();
         steps.removeAllSeries();
 
-        for (int i = 1; i < n; i++) {
-            pr = Double.parseDouble(dat[i][prod]);
-            xx = Double.parseDouble(dat[i][x]);
-            yy = Double.parseDouble(dat[i][y]);
-            if (pr <= x1) {
-                step1.add(xx, yy);
+        for (ArrayList<Double> row : data) {
+            double value = row.get(2);
+            double xcoord = row.get(3);
+            double ycoord = row.get(4);
+            if (value <= x1) {
+                step1.add(xcoord, ycoord);
             }
-            if (pr > x1 && pr <= x2) {
-                step2.add(xx, yy);
+            if (value > x1 && value <= x2) {
+                step2.add(xcoord, ycoord);
             }
-            if (pr > x2 && pr <= x3) {
-                step3.add(xx, yy);
+            if (value > x2 && value <= x3) {
+                step3.add(xcoord, ycoord);
             }
-            if (pr > x3 && pr <= x4) {
-                step4.add(xx, yy);
+            if (value > x3 && value <= x4) {
+                step4.add(xcoord, ycoord);
             }
-            if (pr > x4) {
-                step5.add(xx, yy);
+            if (value > x4) {
+                step5.add(xcoord, ycoord);
             }
         }
 
