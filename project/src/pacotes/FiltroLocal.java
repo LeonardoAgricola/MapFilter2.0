@@ -1,145 +1,128 @@
-package pacotes;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.concurrent.ForkJoinPool;
 
-import java.util.Arrays;
+public class FiltroLocal {
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/**
- *
- * @author Leonardo Felipe Maldaner
- * @author Mark Spekken
- * @author Jose Paulo Molin
- */
+    /**
+     * Filters the elements of the matrix based on local median values and distance
+     * criteria.
+     *
+     * @param data      The input matrix where each element contains coordinate
+     *                  values and a data value.
+     * @param variation The variation percentage to determine the threshold around
+     *                  the median.
+     * @param radius    The radius within which to consider neighboring elements for
+     *                  filtering.
+     * @return The filtered matrix with elements removed based on median and
+     *         distance criteria.
+     */
+    public ArrayList<ArrayList<Double>> filtromedian(ArrayList<ArrayList<Double>> data, double variation,
+            double radius) {
+        int n = data.size();
+        final double variationFinal = variation / 100;
 
-public class FiltroLOcal {
+        List<Integer> indicesToRemove = new ArrayList<>();
 
-    public String[][] filtroMediana(String[][] matriz, int x, int y, int colAt, int nCol, double var, double raio) {
+        for (int k = 0; k < n; k++) {
+            final int index = k; // Make the variable effectively final
 
-        int n = (int) Double.parseDouble(matriz[0][0]);//numero de pts  
-        String[][] filtrolinha = new String[n + 1][nCol + 1];//nova matriz
-        String[][] filtroraio = filtrolinha;//matriz com os dados finais
-        double[] valoreslinha = new double[n + 1];
-        double[] valoresraio = valoreslinha;
-        double xi, xe, yi, ye;
-        int conta1;
-        int conta2;
-        int conta3 = 0;
-        int conta4 = 0;
-        int nMed;
-        double mediana = 0;
-        //int nq1, nq3;
-        double limI, limS;
-        boolean lim;
+            // Collect values within the specified radius
+            List<Double> inValues = IntStream.rangeClosed(1, 100)
+                    .mapToObj(j -> {
+                        List<Double> values = new ArrayList<>();
+                        if (index - j >= 0) {
+                            values.add(data.get(index - j).get(2));
+                        }
+                        if (index + j < n) {
+                            values.add(data.get(index + j).get(2));
+                        }
+                        return values;
+                    })
+                    .flatMap(List::stream)
+                    .collect(Collectors.toList());
 
-        var = var / 100;
+            // Add the current value to the list
+            inValues.add(data.get(k).get(2));
 
-        for (int i = 1; i < n; i++) {
-            conta1 = 1;
-            conta2 = 1;
-            lim = true;
-            while (lim && (i - conta1) > 1) {
-                valoreslinha[conta2] = Double.parseDouble(matriz[i - conta1][colAt]);
-                conta2++;
-                conta1++;
-                if (conta1 == 100) {
-                    lim = false;
-                }
-            }
-            conta1 = 1;
-            lim = true;
-            while (lim && (i + conta1) <= n) {
-                valoreslinha[conta2] = Double.parseDouble(matriz[i + conta1][colAt]);
-                conta2++;
-                conta1++;
-                if (conta1 == 100) {
-                    lim = false;
-                }
-            }
-            Arrays.sort(valoreslinha, 0, conta2 - 1);
-            nMed = (int) Math.round(conta2 * 0.50);
-            for (int j = 0; j < conta2; j++) {
-                if (j == nMed) {
-                    mediana = valoreslinha[j];
-                }
-            }
-            limI = mediana - mediana * var;
-            limS = mediana + mediana * var;
-            if ((Double.parseDouble(matriz[i][colAt]) <= limI) || (Double.parseDouble(matriz[i][colAt]) >= limS)) {
-            } else {
-                conta3++;
-                System.arraycopy(matriz[i], 0, filtrolinha[conta3], 0, nCol + 1);
+            // Calculate the median and limits
+            Collections.sort(inValues);
+            int count = inValues.size();
+            int idm = (count - 1) / 2; // Median index
+            double median = inValues.get(idm);
+
+            double limI = median - median * variationFinal;
+            double limS = median + median * variationFinal;
+
+            // Check if the current value is outside the limits
+            double pointValue = data.get(k).get(2);
+            if (pointValue <= limI || pointValue >= limS) {
+                indicesToRemove.add(k);
             }
         }
 
-        String disNULL;
- 
-        for (int i = 1; i < conta3; i++) {
-            xi = Double.parseDouble(filtrolinha[i][x]);
-            yi = Double.parseDouble(filtrolinha[i][y]);
-            conta1 = 1;
-            conta2 = 1;
-            disNULL = "nao";
-            lim = true;
-            while (lim && (i - conta1) > 1) {
-                xe = Double.parseDouble(filtrolinha[i - conta1][x]);
-                ye = Double.parseDouble(filtrolinha[i - conta1][y]);
-                if (distancia(xi, xe, yi, ye) <= raio) {
-                    valoresraio[conta2] = Double.parseDouble(filtrolinha[i - conta1][colAt]);
-                    conta2++;
-                    if (distancia(xi, xe, yi, ye)<=0.20){
-                        disNULL = "sim";
-                    }
-                }
-                if (conta2 == 600||conta1==8000) {
-                    lim = false;
-                }
-                conta1++;
-            }
-            conta1 = 1;
-            lim = true;
-            while (lim && (i + conta1) < conta3) {
-                xe = Double.parseDouble(filtrolinha[i + conta1][x]);
-                ye = Double.parseDouble(filtrolinha[i + conta1][y]);
-                if (distancia(xi, xe, yi, ye) <= raio) {
-                    valoresraio[conta2] = Double.parseDouble(filtrolinha[i + conta1][colAt]);
-                    conta2++;
-                    if (distancia(xi, xe, yi, ye)<=0.20){
-                        disNULL = "sim";
-                    }
-                }
-                conta1++;
-                if (conta2 == 600||conta1==8000) {
-                    lim = false;
-                }
-            }
-            Arrays.sort(valoresraio, 0, conta2);
-            nMed = (int) Math.round(conta2 * 0.50);
-
-            for (int j = 0; j < conta2; j++) {
-                if (j == nMed) {
-                    mediana = valoresraio[j];
-                } 
-            }
-            double limD = mediana - mediana*var;//limite inferior
-            double limU = mediana + mediana*var;//limite superior
-            if ((Double.parseDouble(filtrolinha[i][colAt]) <= limD) || 
-                    (Double.parseDouble(filtrolinha[i][colAt]) >= limU)||
-                    "sim".equals(disNULL)) {
-            } else {
-                conta4++;//conta o numero de dados filtrados
-                System.arraycopy(filtrolinha[i], 0, filtroraio[conta4], 0, nCol + 1);
-            }
+        // Remove elements from the matrix in a safe manner, in descending order
+        for (int p = indicesToRemove.size() - 1; p >= 0; p--) {
+            data.remove((int) indicesToRemove.get(p));
         }
-        filtroraio[0][0] = String.valueOf(conta4);
-        return filtroraio;
-    }
 
-    public double distancia(double xi, double xe, double yi, double ye) {
-        double dis = Math.sqrt(Math.pow((xe - xi), 2) + Math.pow((ye - yi), 2));
-        return dis;
-    }
+        // Recalculate the distance matrix after removing elements
+        ArrayList<Double> values = data.stream()
+                .map(row -> row.get(2))
+                .collect(Collectors.toCollection(ArrayList::new));
 
+        double radiusSquared = Math.pow(radius, 2);
+        ConcurrentLinkedQueue<Integer> indicesToRemoveAfterDistanceMatrix = new ConcurrentLinkedQueue<>();
+
+        ForkJoinPool customThreadPool = new ForkJoinPool(100); // Ajuste o número de threads conforme necessário
+
+        customThreadPool.submit(() -> data.parallelStream().forEach(row -> {
+            double xi = row.get(3);
+            double yi = row.get(4);
+
+            List<Double> radiusValues = new ArrayList<>();
+            int i = 0;
+
+            for (int index = 0; index < data.size(); index++) {
+                ArrayList<Double> other = data.get(index);
+                double xj = other.get(3);
+                double yj = other.get(4);
+                double distanceSquared = Math.pow(xj - xi, 2) + Math.pow(yj - yi, 2);
+
+                i = (distanceSquared == 0.0) ? index : i;
+
+                if (distanceSquared < radiusSquared) {
+                    radiusValues.add(values.get(index));
+                }
+            }
+
+            if (!radiusValues.isEmpty()) {
+                radiusValues.sort(Double::compareTo);
+                int count = radiusValues.size();
+                double median = radiusValues.get((count - 1) / 2);
+
+                double limI = median - median * variationFinal;
+                double limS = median + median * variationFinal;
+
+                double pointValue = row.get(2);
+                if (pointValue <= limI || pointValue >= limS) {
+                    indicesToRemoveAfterDistanceMatrix.add(i);
+                }
+            }
+        })).join();
+
+        List<Integer> indicesToRemoveMatrix = indicesToRemoveAfterDistanceMatrix.stream()
+                .sorted(Collections.reverseOrder())
+                .collect(Collectors.toList());
+
+        for (int index : indicesToRemoveMatrix) {
+            data.remove(index);
+        }
+
+        return data;
+    }
 }
